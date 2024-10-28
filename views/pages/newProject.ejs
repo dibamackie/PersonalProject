@@ -1,0 +1,24 @@
+<%- include('../partials/header') %>
+
+<link rel="stylesheet" href="/css/newProject.css" />
+
+<section class="new-project">
+  <h2>Add New Project</h2>
+  <form action="/projects" method="POST">
+    <label for="title">Project Title:</label>
+    <input type="text" id="title" name="title" required />
+
+    <label for="description">Description:</label>
+    <textarea id="description" name="description" required></textarea>
+
+    <label for="image">Image URL:</label>
+    <input type="text" id="image" name="image" required />
+
+    <label for="URL">website URL</label>
+    <input type="url" id="URL" name="URL" required />
+
+    <button type="submit">Add Project</button>
+  </form>
+</section>
+
+<%- include('../partials/footer') %>
