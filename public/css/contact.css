@@ -21,7 +21,7 @@ form label {
 form input,
 form textarea {
   padding: 10px;
-  border: 1px solid #cccccc;
+  border: 1px solid #09314e;
   border-radius: 5px;
 }
 
@@ -41,7 +41,7 @@ form button:hover {
 
 .message {
   background: var(--highlight-color);
-  color: white;
+  color: #09314e;
   padding: 10px;
   border-radius: 5px;
   margin-bottom: 20px;

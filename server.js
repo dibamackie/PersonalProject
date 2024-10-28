@@ -4,6 +4,7 @@ const path = require("path");
 const { sendTelegramNotification } = require("./utils/telegram");
 const port = 3000;
 
+app.use(express.json());
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 
@@ -35,7 +36,7 @@ app.post("/contact", (req, res) => {
   res.render("pages/contact", {
     page: "contact",
     message:
-      "Hedwig is taking your message to Hogwarts. Harry will respond as soon as possible. Stay magical!",
+      "Diba will respond as soon as possible. Thanks",
   });
 });
 
